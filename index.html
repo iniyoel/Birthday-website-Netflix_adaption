@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Netflix world- Frontend Clone – Watch TV Shows Online, Watch Movies Online</title>
+<meta name="description" content="Video streaming website Netflix clone. Frontend - HTML5, Pure CSS3 [flexbox], JS, OWL Carousel, JQuery |" />
+    <meta name="robots" content="index, follow" />
+	
+	<!-- og properties -->
+	
+	<meta property="og:site_name" content="Rajesh Royal" />
+	<meta property="article:publisher" content="https://www.facebook.com/Rajesh.royal.896/" />
+
+	<meta property="og:image" content="../images/site-image-description.PNG" />
+
+	<!-- -->
+    
+    <link rel="stylesheet" href="../assets/lib/owl.carousel.css" />
+    <script src="../assets/lib/jquery 3.5.0.js"></script>
+    <script src="../assets/lib/owl.carousel.js"></script>
+
+
+    <!--main script file-->
+    <script src="../assets/js/main-script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" integrity="sha256-t2kyTgkh+fZJYRET5l9Sjrrl4UDain5jxdbqe8ejO8A=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/browse.css">
+    
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <main id="mainContainer" class="p-b-40">
+        <div>
+            <header class="d-flex space-between flex-center flex-middle">
+                <div class="nav-links d-flex flex-center flex-middle">
+                    <a href="#">
+                        <h2 class="logo logo-text red-color f-s-28 m-r-25">NETFLIX</h2>
+                        <h2 class="second-logo-text red-color f-s-28">N</h2>
+                    </a>
+                    <a href="#" class="nav-item home">Home</a>
+                    <a href="#" class="nav-item">TV Show</a>
+                    <a href="#" class="nav-item">Movies</a>
+                    <a href="#" class="nav-item latest">Latest</a>
+                    <a href="#" class="nav-item">My List</a>
+                </div>
+                <div class="righticons d-flex flex-end flex-middle">
+                    <a href="#"><img src="icons/search.svg" alt="search icon"></a>
+                    <div class="dropdown notification">
+                        <img src="icons/notification.svg" alt="notificatio icon">
+                        <div class="dropdown-content">
+                            <a href="#" class="profile-item d-flex flex-middle">
+                                <img src="icons/user2.png" alt="user profile icon" class="user-icon">
+                                <span>Today is your Birthday</span></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <img src="icons/user-image-green.png" alt="user profile icon" class="user-icon"> <span class="profile-arrow"></span>
+
+                        <div class="dropdown-content">
+                            <div class="profile-links">
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="icons/user1.png" alt="user profile icon" class="user-icon">
+                                    <span>Happy</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="icons/user2.png" alt="user profile icon" class="user-icon">
+                                    <span>Birthday</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle">
+                                    <img src="icons/user3.png" alt="user profile icon" class="user-icon">
+                                    <span>To</span>
+                                </a>
+                                <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
+                                    <img src="icons/user4.png" alt="user profile icon" class="user-icon">
+                                    <span> My Duo Kayla</span>
+                                </a>
+                                <a href="#" class="profile-item last" >Manage Profiles</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="links d-flex direction-column">
+                                <a href="#">Account</a>
+                                <a href="#">Help Center</a>
+                                <a href="#">Sign Out of Netflix</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+
+            <!-- hero section -->
+            <div class="">
+                <section id="browse-dashboard" class=" d-flex direction-column flex-start middle-align">
+                    <div>
+                        <!--trailer video-->
+                        <video class="hero-background-image" id="hero-video"
+                            poster="photos/poster.jpg">
+                            <source src="photos/wave to earth - light.mp3">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!--left shadow-->
+                        <div class="shadow-layer"></div>
+                    </div>
+
+                    <div class="container text-container" style="z-index: 5;">
+                        <div class="contentlogo">
+                            <img src="photos/happy birthday.png" alt="content logo"
+                                class="show-logo" />
+                        </div>
+                        <!--top 10 ranking badge svg-->
+                        <div class="ranking d-flex m-t-20 flex-middle">
+                            <span class="p-l-10">HOW TO SAY, I'M HAPPY TO MEET YOU <br> AT THE AUM GAMES IN 2018</span>
+                        </div>
+                        <div class="synopsis m-t-20" style="max-width: 500px;">
+                            <p>
+                                I was thinking of what to say to you, and there are some things I want to tell you.
+                                Happy birthday dear, thank you, once again I thank you, who has been friends with me all this time,
+                                you are the only person who witnesses the rise and fall of the wheels turning in my family. 
+                                I'm proud of you, you still want to live, finally you can study at a top 15 campus, a special gift on your birthday.
+                                If one day you are more successful, please teach me a lot while you are there, and stay with me, okay?
+                                <br>
+                                I love you, duo kay forever
+                            </p>
+                        </div>
+                        <div class="buttons-container m-t-20">
+                            <button class="play-button"><span>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+                                    </svg>
+                                </span> <a href="">Play</a></button>
+
+                            <button class="more-info-button m-t-20"><span>
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span> More Info</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--paretn div with black bg after main hero section-->
+            <div class="black-background">
+            <!--Romantic Movies-->
+            <section id="romantic" class="container p-t-40">
+                <h4 class="romantic-heading">
+                    Best photos of you
+                </h4>
+                <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
+                    <a href="#">
+                        <img src="photos/1.jpg" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/2.jpg" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/3.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item position-relative overflow-hidden"></a>
+                    <a href="#">
+                        <img src="photos/4.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                    <a href="#">
+                        <img src="photos/5.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                    <a href="#">
+                        <img src="photos/6.jpg.png" alt=""
+                            class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                </div>
+            </section>
+            <!--Romantic Movies-->
+            <section id="romantic" class="container p-t-40">
+                    <h4 class="romantic-heading">
+                        Best photos of you
+                    </h4>
+                    <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
+                        <a href="#">
+                            <img src="photos/12.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/7.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/8.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/9.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+                        <a href="#">
+                            <img src="photos/10.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                        <a href="#">
+                            <img src="photos/11.jpg.png" alt=""
+                                class="mylist-img p-r-10 p-t-10 image-size item"></a>
+
+                    </div>
+                </section>
+        <footer class="mainfooter d-flex direction-column space-between" id=" footer">
+            <div class="container footer-container flex-start">
+                <div class="widgets d-flex space-between">
+                    <div class="first-widget">
+                        <ul>
+                            <li class="list-item">Audio and Subtitles</li>
+                            <li class="list-item">Media Center</li>
+                            <li class="list-item">Privacy</li>
+                            <li class="list-item"><a href="https://www.instagram.com/yoelsrg__/">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="second-widget">
+                        <ul>
+                            <li class="list-item">Help Center</li>
+                            <li class="list-item">Cookie</li>
+                            <li class="list-item">Jobs</li>
+                        </ul>
+                    </div>
+                    <div class="third-widget">
+                        <ul>
+                            <li class="list-item">Audio Description</li>
+                            <li class="list-item">Investor Relations</li>
+                            <li class="list-item">Legal Notice</li>
+                        </ul>
+                    </div>
+                    <div class="forth-widget">
+                        <ul>
+                            <li class="list-item">Gift Card</li>
+                            <li class="list-item">Term Of Use</li>
+                            <li class="list-item">Corporate Information</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="button service">Service Code</button>
+                <p class="copyright">@copyright 2024 yoel, Inc.</p>
+            </div>
+
+
+        </footer>
+        </div>
+
+        
+    </main>
+
+    <div class="footer-navigation d-flex space-between">
+        <a href="" class="nav-item active">
+            <i class="fa fa-home" aria-hidden="true"></i> </br>
+            Home
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-search" aria-hidden="true"></i></br>
+            Search
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-film" aria-hidden="true"></i></br>
+            Latest
+        </a>
+        <a href="" class="nav-item">
+            <i class="fa fa-user" aria-hidden="true"></i></br>
+            Account
+        </a>
+    </div>
+
+   
+</body>
+
+</html>
