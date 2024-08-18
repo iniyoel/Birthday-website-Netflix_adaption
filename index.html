@@ -25,8 +25,8 @@
 	<!-- -->
     
     <link rel="stylesheet" href="../assets/lib/owl.carousel.css" />
-    <script src="../assets/lib/jquery 3.5.0.js"></script>
-    <script src="../assets/lib/owl.carousel.js"></script>
+    <script src="assets/lib/jquery 3.5.0.js"></script>
+    <script src="assets/lib/owl.carousel.js"></script>
 
 
     <!--main script file-->
@@ -34,8 +34,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" integrity="sha256-t2kyTgkh+fZJYRET5l9Sjrrl4UDain5jxdbqe8ejO8A=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/browse.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/browse.css">
     
     <script>
 
@@ -111,10 +111,9 @@
                         <!--trailer video-->
                         <video class="hero-background-image" id="hero-video"
                             poster="photos/poster.jpg">
-                            <source src="photos/wave to earth - light.mp3">
-                            Your browser does not support the video tag.
                         </video>
 
+                        
                         <!--left shadow-->
                         <div class="shadow-layer"></div>
                     </div>
@@ -139,12 +138,18 @@
                                 I love you, duo kay forever
                             </p>
                         </div>
+
+                        <audio poster="photos/poster.jpg" id="audio-player" src="photos/wave to earth - light.mp3" type="audio/mpeg"></audio>
+
                         <div class="buttons-container m-t-20">
-                            <button class="play-button"><span>
+                            <button class="play-button" onclick="playAudio()">
+                                <span>
                                     <svg viewBox="0 0 24 24">
                                         <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
                                     </svg>
-                                </span> <a href="">Play</a></button>
+                                </span>
+                                <a href="javascript:void(0);">Play</a>
+                            </button>
 
                             <button class="more-info-button m-t-20"><span>
                                     <svg viewBox="0 0 24 24">
@@ -163,7 +168,7 @@
             <!--Romantic Movies-->
             <section id="romantic" class="container p-t-40">
                 <h4 class="romantic-heading">
-                    Best photos of you
+                    Best Photos of You
                 </h4>
                 <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                     <a href="#">
@@ -191,7 +196,7 @@
             <!--Romantic Movies-->
             <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Best photos of you
+                        Best Photos of You
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -279,7 +284,16 @@
         </a>
     </div>
 
-   
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio-player");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 
 </html>
