@@ -111,8 +111,6 @@
                         <!--trailer video-->
                         <video class="hero-background-image" id="hero-video"
                             poster="photos/poster.jpg">
-                            <source src="photos/wave to earth - light.mp3">
-                            Your browser does not support the video tag.
                         </video>
 
                         <!--left shadow-->
@@ -139,12 +137,17 @@
                                 I love you, duo kay forever
                             </p>
                         </div>
+                        <audio poster="photos/poster.jpg" id="audio-player" src="photos/wave to earth - light.mp3" type="audio/mpeg"></audio>
+
                         <div class="buttons-container m-t-20">
-                            <button class="play-button"><span>
+                            <button class="play-button" onclick="playAudio()">
+                                <span>
                                     <svg viewBox="0 0 24 24">
                                         <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
                                     </svg>
-                                </span> <a href="">Play</a></button>
+                                </span>
+                                <a href="javascript:void(0);">Play</a>
+                            </button>
 
                             <button class="more-info-button m-t-20"><span>
                                     <svg viewBox="0 0 24 24">
@@ -279,7 +282,16 @@
         </a>
     </div>
 
-   
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio-player");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 
 </html>
