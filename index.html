@@ -113,6 +113,7 @@
                             poster="photos/poster.jpg">
                         </video>
 
+                        
                         <!--left shadow-->
                         <div class="shadow-layer"></div>
                     </div>
@@ -124,7 +125,7 @@
                         </div>
                         <!--top 10 ranking badge svg-->
                         <div class="ranking d-flex m-t-20 flex-middle">
-                            <span class="p-l-10">HOW TO SAY, I'M HAPPY TO MEET YOU <br> AT THE AUM GAMES IN 2018</span>
+                            <span class="p-l-10">HOW TO SAY, I'M HAPPY TO MEET YOU <br> AT THE AUM GAMES IN 2018</span>
                         </div>
                         <div class="synopsis m-t-20" style="max-width: 500px;">
                             <p>
@@ -134,22 +135,21 @@
                                 I'm proud of you, you still want to live, finally you can study at a top 15 campus, a special gift on your birthday.
                                 If one day you are more successful, please teach me a lot while you are there, and stay with me, okay?
                                 <br>
-                                I love you, duo kay forever
+                                I love you, duo kay forever
                             </p>
                         </div>
-			<!-- Audio element -->
-			<audio id="audio-player" src="photos/wave to earth - light.mp3" type="audio/mpeg"></audio>
 
-			    
-                        <button class="play-button" onclick="playAudio()">
-    <span>
-        <svg viewBox="0 0 24 24">
-            <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
-        </svg>
-    </span>
-    <a href="javascript:void(0);">Play</a>
-</button>
+                        <audio poster="photos/poster.jpg" id="audio-player" src="photos/wave to earth - light.mp3" type="audio/mpeg"></audio>
 
+                        <div class="buttons-container m-t-20">
+                            <button class="play-button" onclick="playAudio()">
+                                <span>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                                <a href="javascript:void(0);">Play</a>
+                            </button>
 
                             <button class="more-info-button m-t-20"><span>
                                     <svg viewBox="0 0 24 24">
@@ -162,13 +162,11 @@
                     </div>
                 </section>
             </div>
-
-            <!--paretn div with black bg after main hero section-->
             <div class="black-background">
             <!--Romantic Movies-->
             <section id="romantic" class="container p-t-40">
                 <h4 class="romantic-heading">
-                    Best photos of you
+                    Best Photos of You
                 </h4>
                 <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                     <a href="#">
@@ -193,10 +191,10 @@
 
                 </div>
             </section>
-            <!--Romantic Movies-->
+            <!--Best Photos of You-->
             <section id="romantic" class="container p-t-40">
                     <h4 class="romantic-heading">
-                        Best photos of you
+                        Best Photos of You
                     </h4>
                     <div class="romantic-container d-flex flex-start flex-middle flex-no-wrap owl-carousel">
                         <a href="#">
@@ -283,18 +281,17 @@
             Account
         </a>
     </div>
-<script>
-    function playAudio() {
-        var audio = document.getElementById("audio-player");
-        if (audio.paused) {
-            audio.play();
-        } else {
-            audio.pause();
-        }
-    }
-</script>
 
-   
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio-player");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 
 </html>
